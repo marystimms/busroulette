@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Roll the Dice</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav class="site-nav">
+			<div class="nav-container">
+				<a href="index.html" class="logo">Bus Roulette</a>
+				<input type="checkbox" id="menu-toggle" />
+				<label for="menu-toggle" class="menu-icon">&#9776;</label>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rules.html">Customise Rules</a></li>
+					<li><a href="roll.html">Roll</a></li>
+					<li><a href="pub.html">Find Pub</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1>How many stops?</h1>
+		<div id="result" class="roll-result">🎲</div>
+		<button id="rollBtn" class="btn-primary">Roll</button>
+		<a class="btn-secondary" href="pub.html" class="btn-primary">Find my nearest pub</a>
+		<script src="js/roll.js"></script>
+	</body>
+</html>
