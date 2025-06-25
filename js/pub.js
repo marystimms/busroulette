@@ -84,10 +84,9 @@ function init() {
 
   navigator.geolocation.getCurrentPosition(
     (pos) => {
-      //const lat = pos.coords.latitude;
-     // const lon = pos.coords.longitude;
-     const lat = 51.487499;
-const lon = -0.115920;
+     const lat = pos.coords.latitude;
+     const lon = pos.coords.longitude;
+
 
       window.map = L.map("map").setView([lat, lon], 14);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
